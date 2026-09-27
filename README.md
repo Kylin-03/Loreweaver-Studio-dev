@@ -6,7 +6,7 @@
 
 ## 下载与使用
 
-本仓库现已提供源码。Windows x64 便携包已在本机打包验证，尚未公开发布；以下便携包使用步骤适用于发布后。解压时需保留整个目录，不要只移动其中的 EXE。Windows 需要可用的 Microsoft Edge WebView2 Runtime。
+Windows x64 便携包见 [local4 发布页](https://github.com/Kylin-03/Loreweaver-Studio-dev/releases/tag/v0.1.1-local.4)。解压整个压缩包，不要只移动其中的 EXE。Windows 需要可用的 Microsoft Edge WebView2 Runtime。
 
 1. 打开 `loreweaver-studio.exe`。
 2. 在「我的房间」中，将「服务器目录」选择为便携包内的 `host` 文件夹。这一步让客户端使用随包提供的 local4 服务端。
