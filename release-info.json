@@ -1,0 +1,27 @@
+{
+  "release": "local4",
+  "studio_version": "0.1.1-local.4",
+  "server_version": "2.3.dev357+g48dabea.local4",
+  "upstream": {
+    "studio": {
+      "url": "https://github.com/1A7432/loreweaver-studio",
+      "revision": "1503c46b97785ff15d87038039b0118d402c3861",
+      "modified": true
+    },
+    "server": {
+      "url": "https://github.com/1A7432/loreweaver",
+      "revision": "48dabeaf419447ccebd7bef7a8098fd3c947adaf",
+      "modified": true
+    }
+  },
+  "validation": {
+    "frontend_passed": 1004,
+    "rust_passed": 84,
+    "rust_ignored": 1,
+    "backend_focused_passed": 233,
+    "backend_focused_skipped": 4,
+    "protocol_passed": 94,
+    "visual_review": false,
+    "full_backend_pass_claimed": false
+  }
+}

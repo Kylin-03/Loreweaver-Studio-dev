@@ -1,0 +1,33 @@
+# Build output and local dependencies
+**/node_modules/
+**/.venv/
+**/__pycache__/
+**/target/
+**/dist/
+**/build/
+*.py[cod]
+*.log
+
+# Never publish runtime state or credentials
+.env
+.env.*
+!.env.example
+**/host/
+**/data/
+**/backups/
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+**/keeper-key.txt
+**/local-keys.toml
+**/iroh-secret.key
+**/iroh-ticket.txt
+**/room-book.json
+**/server-model.env
+
+# Release binaries are distributed through GitHub Releases
+*.exe
+*.dll
+*.pdb
+*.zip

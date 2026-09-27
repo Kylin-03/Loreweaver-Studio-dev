@@ -1,0 +1,221 @@
+/* One navigation bar and compact reading surfaces; content inherits the active module palette. */
+[hidden] {
+  display: none !important;
+}
+.app-header {
+  gap: 12px;
+  padding: 10px 18px;
+  flex-wrap: wrap;
+}
+.app-title {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.room-switch {
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.workspace-root,
+.play-workspace,
+.workspace-page {
+  height: 100%;
+  min-height: 0;
+}
+.workspace-root {
+  min-width: 0;
+  width: 100%;
+}
+.settings-root > .play-screen {
+  height: 100%;
+  box-sizing: border-box;
+}
+.desk-extra > summary {
+  padding: 9px 4px;
+  color: var(--ink-dim);
+  cursor: pointer;
+  font-size: 13px;
+}
+.workspace-heading,
+.room-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.rooms-screen {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 24px;
+  overflow: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+.rooms-screen h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+.rooms-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 28px;
+}
+.rooms-columns > section,
+.rooms-columns > form {
+  min-width: 0;
+}
+.room-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+.room-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--bg-raised);
+}
+.room-card strong {
+  overflow-wrap: anywhere;
+}
+.room-card p {
+  margin: 5px 0 0;
+}
+.workspace-subnav {
+  display: flex;
+  gap: 8px;
+  padding: 12px 22px;
+  border-bottom: 1px solid var(--border);
+}
+.management-screen {
+  height: 100%;
+  overflow: auto;
+}
+.session-head {
+  min-height: 32px;
+  padding: 7px 14px;
+  gap: 8px;
+  font-size: 12px;
+}
+.chat-toolbar {
+  padding: 5px 14px;
+  gap: 8px;
+  font-size: 12px;
+}
+.session {
+  height: 100%;
+  min-height: 0;
+}
+.composer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+}
+.composer > textarea {
+  width: 100%;
+  min-height: 64px;
+  max-height: 200px;
+  resize: vertical;
+  box-sizing: border-box;
+  line-height: 1.5;
+  padding: 9px 12px;
+}
+.composer-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  position: relative;
+}
+.composer-actions > button:last-child {
+  margin-left: auto;
+}
+.composer-actions .studio-hint {
+  font-size: 11px;
+}
+.dice-tools summary {
+  cursor: pointer;
+  font-size: 13px;
+}
+.dice-tools[open] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: min(340px, 85vw);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 24px #0004;
+}
+.dice-presets,
+.dice-expression {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.dice-presets button {
+  padding: 4px 8px;
+}
+.dice-expression input {
+  min-width: 0;
+  flex: 1;
+}
+.entry-speaker {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.entry-avatar .member-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.history-page {
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+}
+.history-page .history-dialog {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.history-search {
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+}
+.history-search input {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 760px) {
+  .rooms-columns {
+    grid-template-columns: 1fr;
+  }
+  .app-header {
+    gap: 6px;
+    padding: 8px;
+  }
+  .app-title {
+    display: none;
+  }
+  .composer-actions > .studio-hint {
+    display: none;
+  }
+  .room-switch {
+    max-width: 120px;
+  }
+}

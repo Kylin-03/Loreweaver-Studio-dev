@@ -1,0 +1,10 @@
+{
+  "name": "loreweaver-clients",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "protocol",
+    "tui"
+  ]
+}
+

@@ -1,0 +1,47 @@
+.material-editor {
+  padding: 12px;
+  min-width: 0;
+  max-width: 1040px;
+  margin-inline: auto;
+}
+.material-editor h2 {
+  font: 600 16px/1.5 var(--font-ui);
+  margin: 0;
+}
+.material-editor summary {
+  cursor: pointer;
+  padding-block: 8px;
+}
+.material-basics {
+  display: grid;
+  gap: 12px;
+  margin-block: 16px;
+}
+.material-branch {
+  border-left: 1px solid var(--border-soft);
+  padding-left: 12px;
+  margin-block: 6px;
+}
+.material-field {
+  margin-block: 10px;
+  min-width: 0;
+}
+.material-readonly {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--ink-dim);
+  margin-block: 8px;
+}
+.material-readonly code {
+  overflow-wrap: anywhere;
+}
+.material-readonly small {
+  opacity: 0.7;
+}
+.material-edit-fields {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}

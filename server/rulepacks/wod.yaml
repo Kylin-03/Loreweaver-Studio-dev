@@ -1,0 +1,41 @@
+# World of Darkness — a success-counting d10 pool system, expressed entirely as
+# pack data (M16): the dice-expression substrate rolls `{pool}d10>=<difficulty>`
+# and the ladder below grades the counted successes. No engine code knows this
+# system exists; deleting this file removes it.
+names: [wod, "world of darkness"]
+set_keys: [wod]
+defaults: {}
+resolution:
+  version: 1
+  roll: "{pool}d10>={difficulty}"
+  target: none
+  compare: ">="
+  params:
+    # Every `{slot}` a shipped pack declares NEEDS a default: only the keeper's
+    # check tool wires caller params, so a slot without one makes every other
+    # lane (the player check/opposed commands, subsystems) unrollable. There is
+    # no "standard" WoD pool — it is always Attribute + Ability — so the honest
+    # default is the declared floor: an omitted pool rolls one die and can never
+    # fabricate dice the character did not earn. Difficulty 6 IS the WoD standard.
+    pool: {min: 1, max: 200, default: 1}
+    difficulty: {min: 2, max: 10, default: 6}
+  ranks:
+    - {id: botch, when: "successes == 0 && ones > 0", fumble: true, tier: 0}
+    - {id: fail, when: "successes == 0", tier: 1}
+    - {id: success, success: true, tier: 2}
+  margin: successes
+labels:
+  en:
+    botch: [Botch]
+    fail: {display: Failure, markers: []}
+    success: {display: Success, markers: []}
+  zh:
+    botch: [大失败]
+    fail: {display: 失败, markers: []}
+    success: {display: 成功, markers: []}
+
+commands:
+  ra: {action: check}
+expertise:
+  en: "# World of Darkness — Storyteller\nPersonal horror: the character's inner moral conflict is the story; keep Humanity and Willpower under pressure. The engine computes dice pools; you narrate from its results."
+  zh: "# 黑暗世界——ST\n个人恐怖：角色内心的道德冲突就是故事本身；让人性与意志持续承压。骰池由引擎计算；你按结果叙事。"

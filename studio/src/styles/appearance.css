@@ -1,0 +1,56 @@
+/* Compact reading defaults; append after existing local3 rules. */
+:root[data-play-density="compact"] .narrative-log {
+  gap: 6px;
+}
+:root[data-play-density="compact"] .session .log-entry {
+  padding: 7px 10px;
+}
+:root[data-play-density="compact"] .entry-body p {
+  margin-block: 0.3em;
+}
+:root[data-play-density="compact"] .session .entry-speaker {
+  margin-bottom: 3px;
+}
+:root[data-play-density="comfortable"] .narrative-log {
+  gap: 12px;
+}
+:root[data-play-avatars="hide"] .member-avatar,
+:root[data-play-avatars="hide"] .entry-avatar {
+  display: none;
+}
+.session .input-box input,
+.session .input-box textarea {
+  font: var(--play-font-size, 16px)/var(--play-line-height, 1.5) var(--play-font-family, sans-serif);
+}
+.appearance-live-preview {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-block: 12px;
+  padding: 16px;
+}
+.appearance-preview-backdrop {
+  position: absolute;
+  inset: -16px;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.appearance-preview-copy {
+  padding: 12px;
+  border-radius: 5px;
+}
+.appearance-preview-copy p {
+  margin-block: 0.4em;
+}
+.appearance-advanced > summary,
+.appearance-scheme-controls summary {
+  cursor: pointer;
+  padding-block: 10px;
+}
+.appearance-scheme-controls {
+  margin-block: 12px;
+  max-width: 640px;
+}

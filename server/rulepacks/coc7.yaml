@@ -1,0 +1,691 @@
+names: [coc, coc7, "call of cthulhu"]
+defaults:
+  力量: 50
+  体质: 50
+  体型: 50
+  敏捷: 50
+  外貌: 50
+  智力: 50
+  意志: 50
+  教育: 50
+  幸运: 50
+  理智: 50
+  生命值: 10
+  魔法值: 10
+  信用评级: 0
+  取悦: 15
+  话术: 5
+  恐吓: 15
+  说服: 10
+  心理学: 10
+  母语: 50
+  外语: 1
+  估价: 5
+  乔装: 5
+  潜行: 20
+  追踪: 10
+  侦查: 25
+  聆听: 20
+  读唇: 1
+  图书馆: 20
+  生存: 10
+  攀爬: 20
+  跳跃: 20
+  骑乘: 5
+  游泳: 20
+  潜水: 1
+  艺术与手艺: 5
+  表演: 5
+  美术: 5
+  伪造: 5
+  摄影: 5
+  写作: 5
+  音乐: 5
+  舞蹈: 5
+  厨艺: 5
+  妙手: 10
+  锁匠: 1
+  电气维修: 10
+  机械维修: 10
+  计算机使用: 5
+  导航: 10
+  汽车驾驶: 20
+  驾驶:飞行器: 1
+  驾驶:船: 1
+  驯兽: 5
+  操作重型机械: 1
+  斗殴: 25
+  斧: 15
+  链锯: 10
+  连枷: 10
+  绞索: 15
+  矛: 20
+  剑: 20
+  鞭: 5
+  射击: 10
+  手枪: 20
+  步霰: 25
+  投掷: 20
+  爆破: 1
+  炮术: 1
+  急救: 30
+  医学: 1
+  精神分析: 1
+  催眠: 1
+  会计: 5
+  法律: 5
+  历史: 5
+  考古学: 1
+  博物: 10
+  人类学: 1
+  神秘学: 5
+  电子学: 1
+  科学: 1
+  天文学: 1
+  生物学: 1
+  植物学: 1
+  化学: 1
+  密码学: 1
+  工程学: 1
+  司法科学: 1
+  地质学: 1
+  数学: 10
+  气象学: 1
+  药学: 1
+  物理学: 1
+  动物学: 1
+  克苏鲁神话: 0
+alias:
+  力量: [str, STR, strength, Strength]
+  体质: [con, CON, constitution, Constitution, 體質]
+  体型: [siz, SIZ, size, Size, 體型, 体形, 體形]
+  敏捷: [dex, DEX, dexterity, Dexterity]
+  外貌: [app, APP, appearance, Appearance, 外表]
+  智力: [int, INT, intelligence, Intelligence, idea, 灵感, 靈感]
+  意志: [pow, POW, power, Power, will, willpower]
+  教育: [edu, EDU, education, Education, knowledge, 知识, 知識]
+  幸运: [LUC, luck, LUCK, luck value, 幸运值, 运气, 幸運, 運氣, 幸運值]
+  DB: [db, damage bonus, 伤害加值, 傷害加值]
+  体格: [build, Build, 體格]
+  移动力: [mov, MOV, move, movement, 移動力, 移动速度, 移動速度, 移速]
+  护甲: [ar, AR, armor, armour, 装甲, 護甲, 裝甲]
+  理智: [san, SAN, sanity, Sanity, san值, SAN值, 理智值, 理智点数, 心智, 心智点数, 心智點數, 理智點數]
+  理智上限: [sanmax, SANMAX, max sanity, sanity max, san上限, SAN上限, san值上限, SAN值上限, 理智值上限, 理智点数上限, 心智上限]
+  生命值: [hp, HP, hit points, health, 生命, 体力, 體力, 血量, 耐久值]
+  生命值上限: [hpmax, HPMAX, max hp, hp max, 生命上限, 体力上限, 體力上限, 血量上限, 耐久值上限]
+  魔法值: [mp, MP, magic points, 魔法, 魔力, 魔力值]
+  魔法值上限: [mpmax, MPMAX, max mp, mp max, 魔法上限, 蓝量上限, 藍量上限]
+  信用评级: [credit rating, credit, cr, CR, 信誉, 信用, 信誉度, 信用評級, 信譽, 信譽度]
+  取悦: [charm, 魅惑, 取悅, 媚惑, 勾引, 风情, 風情]
+  话术: [fast talk, fast-talk, 快速交谈, 話術, 快速交談, 调情, 撩拨, 調情, 撩撥]
+  恐吓: [intimidate, intimidation, 恐嚇, 威吓, 威嚇]
+  说服: [persuade, persuasion, 辩论, 议价, 演讲, 說服, 辯論, 議價, 演講]
+  心理学: [psychology, psychoanalysis check, 心理學, 洞察情感, 察言观色, 共情, 同理心, 察言觀色]
+  母语: [own language, language own, native language, 母語]
+  外语: [foreign language, other language, language, 语言, 語言, 外語, 其他语言, 其他語言]
+  估价: [appraise, appraisal, 鉴定, 估價]
+  乔装: [disguise, 伪装, 喬裝]
+  潜行: [stealth, sneak, hide, 躲藏, 潛行, 隐匿]
+  追踪: [track, tracking, 跟踪, 追蹤, 跟蹤]
+  侦查: [spot hidden, spot, notice, perception, 侦察, 偵查, 偵察, 发现]
+  聆听: [listen, hearing, 倾听, 聆聽, 傾聽]
+  读唇: [read lips, lip reading, 唇语, 讀唇, 唇語]
+  图书馆: [library use, library, library-use, 图书馆使用, 圖書館使用, 图书馆利用, 圖書館, 圖書館利用]
+  生存: [survival, survive]
+  攀爬: [climb, climbing, 攀岩, 攀登, 攀巖]
+  跳跃: [jump, jumping, 跳躍]
+  骑乘: [ride, riding, 骑术, 騎術]
+  游泳: [swim, swimming, 遊泳]
+  潜水: [diving, dive, 潛水]
+  艺术与手艺: [art craft, art and craft, arts crafts, art/craft, 艺术和手艺, 艺术, 手艺, 工艺, 技艺, 藝術與手藝, 藝術和手藝]
+  表演: [perform, performance, acting, 艺术和手艺:表演, 艺术和手艺（表演）]
+  美术: [fine art, art, 美術, 艺术和手艺:美术, 艺术和手艺（美术）]
+  伪造: [forgery, forge, 偽造]
+  摄影: [photography, photo, 攝影]
+  写作: [writing, literature, 文学, 寫作, 文學]
+  音乐: [music, 音樂]
+  舞蹈: [dance, dancing]
+  厨艺: [cooking, cook, cuisine, 烹饪, 廚藝, 烹飪]
+  妙手: [sleight of hand, sleight, legerdemain, 巧手, 藏匿, 盗窃, 盜竊]
+  锁匠: [locksmith, locksmithing, lockpick, lock picking, 开锁, 撬锁, 钳工, 鎖匠, 鉗工, 開鎖, 撬鎖]
+  电气维修: [electrical repair, electrical, electrician, 电器维修, 电工, 電氣維修, 電器維修, 電工]
+  机械维修: [mechanical repair, mechanical, mechanics, repair, 机器维修, 机修, 機器維修, 機修, 機械維修]
+  计算机使用: [computer use, computer, computers, 电脑使用, 計算機使用, 電腦使用, 计算机, 电脑, 計算機, 電腦]
+  导航: [navigate, navigation, 领航, 領航, 導航]
+  汽车驾驶: [drive auto, drive automobile, drive, driving, auto, automobile, 驾驶, 駕駛, 汽車駕駛, 汽车, 汽車, 开车, 開車, 驾车, 駕車]
+  驾驶:飞行器: [pilot aircraft, aircraft, 飞行器, 开飞行器, 驾驶飞行器, 驾驶:飞行器, 驾驶（飞行器）]
+  驾驶:船: [pilot boat, boat, ship, 船, 开船, 驾驶船, 驾驶:船, 驾驶（船）]
+  驯兽: [animal handling, animal handling coc, animal training, animal, 动物驯养, 驯养, 馴獸, 動物馴養, 馴養]
+  操作重型机械: [operate heavy machinery, heavy machinery, 重型操作, 重型机械, 重型, 重机, 操作重型機械, 重型機械, 重機]
+  斗殴: [fighting brawl, brawl, fighting, fist, 格斗, 格斗:斗殴, 格斗（斗殴）, 鬥毆, 格鬥]
+  斧: [axe, ax, 斧头, 斧子, 斧頭, 格斗:斧, 格斗（斧）]
+  链锯: [chainsaw, chain saw, 电锯, 油锯, 鏈鋸, 電鋸, 油鋸]
+  连枷: [flail, 链枷, 連枷, 鏈枷]
+  绞索: [garrote, garotte, 绞具, 絞索, 絞具]
+  矛: [spear, lance]
+  剑: [sword, swordsmanship, 剑术, 劍, 劍術]
+  鞭: [whip]
+  射击: [firearms, firearm, shooting, gun, guns, 火器, 枪械, 槍械, 射擊]
+  手枪: [handgun, pistol, firearms handgun, shoot handgun, shooting handgun, 射击:手枪, 射击（手枪）, 手槍]
+  步霰: [rifle shotgun, rifle/shotgun, rifle, shotgun, long gun, firearms rifle, firearms shotgun, 步枪/霰弹枪, 射击:步枪, 射击:霰弹枪, 步枪, 霰弹枪, 散弹枪, 步槍, 霰彈槍, 步槍/霰彈槍]
+  投掷: [throw, throwing, 投擲]
+  爆破: [demolitions, demolition, explosives]
+  炮术: [artillery, gunnery, 炮術, 火炮]
+  急救: [first aid, first-aid, 医疗]
+  医学: [medicine, medical, 醫學, 医疗, 醫療]
+  精神分析: [psychoanalysis, psycho analysis, 心理分析]
+  催眠: [hypnosis, hypnotism]
+  会计: [accounting, accountant, 會計]
+  法律: [law, legal, 律法]
+  历史: [history, 歷史]
+  考古学: [archaeology, archeology, 考古學]
+  博物: [natural world, nature, natural history, 自然, 自然学, 自然史, 自然學, 博物学, 博物學]
+  人类学: [anthropology, 人類學]
+  神秘学: [occult, occultism, 神秘學]
+  电子学: [electronics, electronic, 電子學]
+  科学: [science, sciences, 科學]
+  天文学: [astronomy, 科学:天文学, 科学（天文学）, 天文學]
+  生物学: [biology, 科学:生物学, 科学（生物学）, 生物學]
+  植物学: [botany, 科学:植物学, 科学（植物学）, 植物學]
+  化学: [chemistry, 科学:化学, 科学（化学）, 化學]
+  密码学: [cryptography, cryptology, 科学:密码学, 科学（密码学）, 密碼學]
+  工程学: [engineering, engineer, 科学:工程学, 科学（工程学）, 工程學]
+  司法科学: [forensics, forensic science, 科学:司法科学, 科学（司法科学）, 司法科學]
+  地质学: [geology, geography, 科学:地质学, 科学（地质学）, 地質學, 地理学]
+  数学: [mathematics, math, maths, 科学:数学, 科学（数学）, 數學]
+  气象学: [meteorology, weather science, 科学:气象学, 科学（气象学）, 氣象學]
+  药学: [pharmacy, pharmacology, 科学:药学, 科学（药学）, 藥學]
+  物理学: [physics, physical science, 科学:物理学, 科学（物理学）, 物理, 物理學]
+  动物学: [zoology, 科学:动物学, 科学（动物学）, 動物學]
+  克苏鲁神话: [cthulhu mythos, mythos, cm, CM, 克苏鲁, 克苏鲁神话知识, 克蘇魯, 克蘇魯神話, 克蘇魯神話知識]
+st_show:
+  top: [力量, 敏捷, 体质, 体型, 外貌, 智力, 意志, 教育, 幸运, DB, 体格, 移动力, 理智, 生命值, 魔法值, 护甲]
+  sortBy: name
+  itemsPerLine: 4
+  ignores: [生命值上限, 魔法值上限, 理智上限]
+set_keys: [coc, coc7]
+# Check resolution (M16): the d100 roll-under ladder, compiled by core.resolution.
+# The ENGINE rolls (`roll:`, with the named tens-dice modifiers) and the ladder
+# below INTERPRETS — a pure (roll, target) -> rank grading the engine can replay,
+# re-grade after a Luck spend, and exhaustively table-test. Expression namespace:
+# roll (final d100), target (difficulty-adjusted), raw_target (before difficulty),
+# dice[i], plus floor/ceil/min/max/abs. First matching rule wins; every ladder
+# ends with an unconditional fallback. `variants:` are the SealDice `.setcoc`
+# house rules — whole replacement ladders, selected per room at interpret time.
+resolution:
+  version: 1
+  roll: 1d100
+  target: skill
+  compare: "<="
+  modifiers:
+    bonus: {tens_reroll: keep_lowest}
+    penalty: {tens_reroll: keep_highest}
+  # How the generic check tool/commands feed this system: the favorable /
+  # unfavorable counts route to these named roll modifiers.
+  check:
+    favorable: bonus
+    unfavorable: penalty
+    default_skill: 侦查
+  difficulties:
+    regular: {prefixes: {en: [regular], zh: []}}
+    hard: {target: "floor(target / 2)", prefixes: {en: [hard], zh: [困难]}}
+    extreme: {target: "floor(target / 5)", prefixes: {en: [extreme], zh: [极难]}}
+    critical: {target: "1", prefixes: {en: [critical], zh: [大成功]}}
+  # Rulebook rule (SealDice rule 0): 1 always crits; 100 always fumbles; the
+  # 96-100 fumble band applies when the EFFECTIVE target is below 50.
+  ranks:
+    - {id: crit, when: "roll == 1", success: true, critical: true, tier: 5}
+    - {id: fumble, when: "roll == 100", fumble: true, tier: 0}
+    - {id: extreme, when: "roll <= target && roll <= floor(raw_target / 5)", success: true, tier: 4}
+    - {id: hard, when: "roll <= target && roll <= floor(raw_target / 2)", success: true, tier: 3}
+    - {id: regular, when: "roll <= target", success: true, tier: 2}
+    - {id: fumble, when: "roll >= 96 && target < 50", fumble: true, tier: 0}
+    - {id: fail, tier: 1}
+  variants:
+    # rule 1: crit 1-5 at skill>=50 (else 1); fumble 96-100 below 50 (else 100).
+    rule1:
+      ranks:
+        - {id: crit, when: "roll == 1", success: true, critical: true, tier: 5}
+        - {id: crit, when: "raw_target >= 50 && roll <= 5", success: true, critical: true, tier: 5}
+        - {id: extreme, when: "roll <= target && roll <= floor(raw_target / 5)", success: true, tier: 4}
+        - {id: hard, when: "roll <= target && roll <= floor(raw_target / 2)", success: true, tier: 3}
+        - {id: regular, when: "roll <= target", success: true, tier: 2}
+        - {id: fumble, when: "raw_target < 50 && roll >= 96", fumble: true, tier: 0}
+        - {id: fumble, when: "raw_target >= 50 && roll == 100", fumble: true, tier: 0}
+        - {id: fail, tier: 1}
+    # rule 2 (domestic common): crit = 1-5 capped by the skill; fumble 96-100
+    # (a 96+ skill only fumbles above its own value).
+    rule2:
+      ranks:
+        - {id: crit, when: "roll == 1", success: true, critical: true, tier: 5}
+        - {id: crit, when: "roll <= 5 && roll <= raw_target", success: true, critical: true, tier: 5}
+        - {id: extreme, when: "roll <= target && roll <= floor(raw_target / 5)", success: true, tier: 4}
+        - {id: hard, when: "roll <= target && roll <= floor(raw_target / 2)", success: true, tier: 3}
+        - {id: regular, when: "roll <= target", success: true, tier: 2}
+        - {id: fumble, when: "raw_target < 96 && roll >= 96", fumble: true, tier: 0}
+        - {id: fumble, when: "raw_target >= 96 && roll >= min(raw_target + 1, 100)", fumble: true, tier: 0}
+        - {id: fail, tier: 1}
+    # rule 3 (strict): 1-5 crit and 96-100 fumble OVERRIDE the check result.
+    rule3:
+      ranks:
+        - {id: fumble, when: "roll >= 96", fumble: true, tier: 0}
+        - {id: crit, when: "roll <= 5", success: true, critical: true, tier: 5}
+        - {id: extreme, when: "roll <= target && roll <= floor(raw_target / 5)", success: true, tier: 4}
+        - {id: hard, when: "roll <= target && roll <= floor(raw_target / 2)", success: true, tier: 3}
+        - {id: regular, when: "roll <= target", success: true, tier: 2}
+        - {id: fail, tier: 1}
+    # rule 4 (balanced): crit 1..min(skill/10, 5); fumble from 96 + skill/10.
+    rule4:
+      ranks:
+        - {id: crit, when: "roll <= min(floor(raw_target / 10), 5)", success: true, critical: true, tier: 5}
+        - {id: extreme, when: "roll <= target && roll <= floor(raw_target / 5)", success: true, tier: 4}
+        - {id: hard, when: "roll <= target && roll <= floor(raw_target / 2)", success: true, tier: 3}
+        - {id: regular, when: "roll <= target", success: true, tier: 2}
+        - {id: fumble, when: "roll >= min(96 + floor(raw_target / 10), 100)", fumble: true, tier: 0}
+        - {id: fail, tier: 1}
+    # rule 5 (hard): crit 1..min(skill/5, 2); fumble 96-100 below 50, else 99-100.
+    rule5:
+      ranks:
+        - {id: crit, when: "roll <= min(floor(raw_target / 5), 2)", success: true, critical: true, tier: 5}
+        - {id: extreme, when: "roll <= target && roll <= floor(raw_target / 5)", success: true, tier: 4}
+        - {id: hard, when: "roll <= target && roll <= floor(raw_target / 2)", success: true, tier: 3}
+        - {id: regular, when: "roll <= target", success: true, tier: 2}
+        - {id: fumble, when: "raw_target < 50 && roll >= 96", fumble: true, tier: 0}
+        - {id: fumble, when: "raw_target >= 50 && roll >= 99", fumble: true, tier: 0}
+        - {id: fail, tier: 1}
+    # dg (Delta Green): matching digits decide — doubles crit on a success and
+    # fumble on a failure; no hard/extreme tiers; 1 always crits.
+    dg:
+      ranks:
+        - {id: crit, when: "roll == 1", success: true, critical: true, tier: 5}
+        - {id: crit, when: "roll <= target && roll % 10 == floor(roll / 10) % 10", success: true, critical: true, tier: 5}
+        - {id: fumble, when: "roll > target && roll % 10 == floor(roll / 10) % 10", fumble: true, tier: 0}
+        - {id: regular, when: "roll <= target", success: true, tier: 2}
+        - {id: fail, tier: 1}
+# Success-ladder presentation labels (rank id -> display + detector markers).
+# `display` renders in tool output and wire frames; `markers` join the agent's
+# dice-first outcome detectors (core.rulepacks.all_outcome_labels). Generic
+# words ("Success"/"成功") stay display-only so ordinary narration never
+# false-positives as an already-graded check.
+labels:
+  en:
+    crit: [Critical Success]
+    extreme: [Extreme Success]
+    hard: [Hard Success]
+    regular: {display: Success, markers: [Regular Success]}
+    fail: {display: Failure, markers: []}
+    fumble: [Fumble, Critical Failure]
+  zh:
+    crit: [大成功]
+    extreme: [极难成功]
+    hard: [困难成功]
+    regular: {display: 成功, markers: [常规成功, 普通成功]}
+    fail: {display: 失败, markers: []}
+    fumble: [大失败]
+derived:
+  DB:
+    sum_ranges:
+      of: [力量, 体型]
+      ranges: [[0, 64, "-2"], [65, 84, "-1"], [85, 124, "0"], [125, 164, 1d4], [165, 204, 1d6]]
+      else: {expr: "floor((力量 + 体型 - 205) / 80) + 2", format: "{}d6"}
+  体格:
+    sum_ranges:
+      of: [力量, 体型]
+      ranges: [[0, 64, -2], [65, 84, -1], [85, 124, 0], [125, 164, 1], [165, 204, 2]]
+      else: {expr: "floor((力量 + 体型 - 205) / 80) + 3"}
+  移动力: {expr: "if(敏捷 > 体型 && 力量 > 体型, 9, if(敏捷 < 体型 && 力量 < 体型, 7, 8))"}
+  生命值上限: {expr: "floor((体质 + 体型) / 10)"}
+  生命值: {expr: "floor((体质 + 体型) / 10)"}
+  魔法值上限: {expr: "floor(意志 / 5)"}
+  魔法值: {expr: "floor(意志 / 5)"}
+  理智上限: {expr: "99 - 克苏鲁神话"}
+  母语: {copy_of: 教育}
+  闪避: {half_of: 敏捷}
+  灵感: {copy_of: 智力}
+  知识: {copy_of: 教育}
+# Deterministic creation/edit constraints (M16 stage B). `attributes` keys are
+# the sheet's STORAGE keys (they clamp + roll straight into the attributes
+# dict); budget formulas are condexpr over the CANONICAL value namespace.
+creation_constraints:
+  # Declaration order IS the creation roll order (seeded-dice reproducibility).
+  attributes:
+    STR: {min: 15, max: 90, roll: "3d6x5"}
+    CON: {min: 15, max: 90, roll: "3d6x5"}
+    SIZ: {min: 40, max: 90, roll: "(2d6+6)x5"}
+    DEX: {min: 15, max: 90, roll: "3d6x5"}
+    APP: {min: 15, max: 90, roll: "3d6x5"}
+    INT: {min: 40, max: 90, roll: "(2d6+6)x5"}
+    POW: {min: 15, max: 90, roll: "3d6x5"}
+    EDU: {min: 40, max: 90, roll: "(2d6+6)x5"}
+    LUC: {min: 15, max: 90, roll: "3d6x5"}
+  skills:
+    default: {min: 0, max: 90, growth_max: 99}
+  budgets:
+    # Skill-point budget: spent = sum over non-derived skills of the points
+    # above the fresh-sheet base. The budget is the SUM of parts; a {max: [...]}
+    # part takes the best of its alternatives (occupation formula families).
+    skill_points:
+      parts:
+        - "智力 * 2"
+        - max: ["教育 * 4", "教育 * 2 + 力量 * 2", "教育 * 2 + 敏捷 * 2", "教育 * 2 + 外貌 * 2", "教育 * 2 + 意志 * 2"]
+# Initiative order roll: {name} slots read the sheet's canonical values.
+initiative:
+  roll: "1d100 + {敏捷}"
+# Presentation-only localized names for canonical keys (checks/tools render via
+# RulePack.display_name; unmapped keys fall back to the canonical key itself).
+display:
+  zh:
+    bonus: 奖励骰
+    penalty: 惩罚骰
+  en:
+    bonus: Bonus dice
+    penalty: Penalty dice
+    力量: STR
+    体质: CON
+    体型: SIZ
+    敏捷: DEX
+    外貌: APP
+    智力: INT
+    意志: POW
+    教育: EDU
+    幸运: Luck
+    理智: Sanity
+    理智上限: Max Sanity
+    生命值: HP
+    生命值上限: Max HP
+    魔法值: MP
+    魔法值上限: Max MP
+    体格: Build
+    移动力: MOV
+    护甲: Armor
+    闪避: Dodge
+    信用评级: Credit Rating
+    取悦: Charm
+    话术: Fast Talk
+    恐吓: Intimidate
+    说服: Persuade
+    心理学: Psychology
+    母语: Language (Own)
+    外语: Language (Other)
+    估价: Appraise
+    乔装: Disguise
+    潜行: Stealth
+    追踪: Track
+    侦查: Spot Hidden
+    聆听: Listen
+    读唇: Read Lips
+    图书馆: Library Use
+    生存: Survival
+    攀爬: Climb
+    跳跃: Jump
+    骑乘: Ride
+    游泳: Swim
+    潜水: Diving
+    艺术与手艺: Art/Craft
+    表演: Acting
+    美术: Fine Art
+    伪造: Forgery
+    摄影: Photography
+    写作: Writing
+    音乐: Music
+    舞蹈: Dance
+    厨艺: Cooking
+    妙手: Sleight of Hand
+    锁匠: Locksmith
+    电气维修: Electrical Repair
+    机械维修: Mechanical Repair
+    计算机使用: Computer Use
+    导航: Navigate
+    汽车驾驶: Drive Auto
+    驾驶:飞行器: Pilot (Aircraft)
+    驾驶:船: Pilot (Boat)
+    驯兽: Animal Handling
+    操作重型机械: Operate Heavy Machinery
+    斗殴: Fighting (Brawl)
+    斧: Fighting (Axe)
+    链锯: Fighting (Chainsaw)
+    连枷: Fighting (Flail)
+    绞索: Fighting (Garrote)
+    矛: Fighting (Spear)
+    剑: Fighting (Sword)
+    鞭: Fighting (Whip)
+    射击: Firearms
+    手枪: Firearms (Handgun)
+    步霰: Firearms (Rifle/Shotgun)
+    投掷: Throw
+    爆破: Demolitions
+    炮术: Artillery
+    急救: First Aid
+    医学: Medicine
+    精神分析: Psychoanalysis
+    催眠: Hypnosis
+    会计: Accounting
+    法律: Law
+    历史: History
+    考古学: Archaeology
+    博物: Natural World
+    人类学: Anthropology
+    神秘学: Occult
+    电子学: Electronics
+    科学: Science
+    天文学: Science (Astronomy)
+    生物学: Science (Biology)
+    植物学: Science (Botany)
+    化学: Science (Chemistry)
+    密码学: Science (Cryptography)
+    工程学: Science (Engineering)
+    司法科学: Science (Forensics)
+    地质学: Science (Geology)
+    数学: Science (Mathematics)
+    气象学: Science (Meteorology)
+    药学: Science (Pharmacy)
+    物理学: Science (Physics)
+    动物学: Science (Zoology)
+    克苏鲁神话: Cthulhu Mythos
+
+# Extra play mechanics beyond the basic check (M16 stage D): each key is the
+# KP TOOL NAME this pack materializes (and the wire `subsystem` id), bound to
+# one of the engine's generic behavior templates. All vocabulary is this
+# pack's own — the engine knows only the template semantics.
+subsystems:
+  sanity_check:
+    template: check_with_loss
+    stat: SAN
+    stat_max: SANMAX
+    # Intentional house rule, not CoC7e RAW: a fumbled check drains ALL
+    # remaining points (RAW would take the loss dice's maximum, "max").
+    # Faithfully ported from the pre-M16 engine implementation.
+    fumble_loss: all
+    display: {en: Sanity, zh: 理智}
+  skill_growth:
+    template: improvement_check
+    roll: 1d100
+    improve: 1d10
+    cap: 100
+    # Rulebook experience check: a roll above the skill grows it, and 96-100
+    # always grows even at high skill.
+    auto_success_above: 95
+    display: {en: Skill growth, zh: 技能成长}
+  spend_luck:
+    template: resource_spend_adjust
+    stat: LUC
+    display: {en: Luck, zh: 幸运}
+  opposed_check:
+    template: opposed
+    display: {en: Opposed check, zh: 对抗检定}
+  random_madness:
+    template: table_draw
+    default: temp
+    display: {en: Madness symptom, zh: 疯狂症状}
+    # Madness-table entries are CJK game DATA (i18n-exempt by convention),
+    # ported verbatim from the pre-M16 engine tables.
+    tables:
+      temp:
+        display: {en: Temporary madness, zh: 临时性疯狂}
+        aliases: [临时, temporary]
+        entries:
+          - 失忆：调查员会发现自己只记得最后身处的安全地点，却没有任何来到这里的记忆。
+          - 假性残疾：调查员陷入了心理性的失明、失聪或躯体缺失感中。
+          - 暴力倾向：调查员陷入了六亲不认的暴力行为中。
+          - 偏执：调查员陷入了严重的偏执妄想之中，所有人都想要伤害他。
+          - 人际依赖：调查员因为一些原因而将某人当作了支柱。
+          - 昏厥：调查员当场昏倒。
+          - 逃避行为：调查员会用任何手段试图逃离现场。
+          - 歇斯底里：调查员表现出大笑、哭泣、嘶吼、害怕等极端情绪反应。
+      long:
+        display: {en: Long-term madness, zh: 总结性疯狂}
+        aliases: [总结, 总结性]
+        entries:
+          - 恐惧症：调查员患上了一种恐惧症，如幽闭恐惧症、恐高症等。
+          - 躁狂症：调查员患上了一种躁狂症，如盗窃癖、纵火癖等。
+          - 幻觉：调查员持续产生幻觉。
+          - 偏执：调查员持续处于偏执状态。
+          - 解离性障碍：调查员的人格发生分裂或记忆丧失。
+          - 强迫症：调查员产生了强迫性的行为模式。
+          - 抑郁症：调查员陷入了严重的抑郁状态。
+          - 创伤后应激障碍：调查员因恐怖经历而产生持续的心理创伤。
+      indefinite:
+        display: {en: Indefinite madness, zh: 不定性疯狂}
+        aliases: [不定, 不定性]
+        entries:
+          - 强烈的被迫害妄想，认为周围的一切都在针对自己。
+          - 无法控制的重复行为，如不断洗手、检查门锁等。
+          - 严重的解离症状，感觉自己不属于这个世界。
+          - 持续的噩梦和失眠，精神极度衰弱。
+          - 对某种颜色或声音的极度恐惧和排斥。
+          - 出现第二人格，完全不同于平时的自己。
+          - 失去对时间的感知，认为时间倒流或停滞。
+          - 坚信自己变成了某种非人生物。
+# Dot-command dialect (dice-bot community convention words -> this pack's
+# actions; the command layer resolves them per room).
+commands:
+  ra: {action: check}
+  rc: {action: check}
+  coc: {action: make_char}
+  coc7: {action: make_char}
+  sc: {tool: sanity_check}
+  sanity: {tool: sanity_check}
+  en: {tool: skill_growth}
+  growth: {tool: skill_growth}
+  ti: {tool: random_madness, args: {table: temp}}
+  li: {tool: random_madness, args: {table: long}}
+# Per-locale keeper-expertise prompt text (stage D: prompts are pack data).
+expertise:
+  en: "# Call of Cthulhu (CoC7) — Keeper\nPsychological horror over gore: reveal the truth gradually, and pace the descent with sanity checks at genuine horror exposures. Investigation drives play — clues move the story, and failures move it too. The engine computes success levels, bonus/penalty dice, and criticals; you narrate from its results."
+  zh: "# 克苏鲁的呼唤（CoC7）——守秘人\n心理恐怖重于血浆：逐步揭示真相，在真正的恐怖暴露处用理智检定为疯狂的降临定节奏。调查驱动游戏——线索推动故事，失败同样推动故事。成功等级、奖惩骰与大成功大失败由引擎计算；你按结果叙事。"
+
+# Sheet substrate (M16 stage B): how this system's sheets are shaped — the
+# fresh-sheet tables, the canonical-name <-> storage-key bridge, current-pool
+# vitals (with creation initialization), and the generic resources the wire/
+# panels render. Engine code holds NONE of this.
+sheet:
+  label: CoC
+  attr_keys:
+    力量: STR
+    体质: CON
+    体型: SIZ
+    敏捷: DEX
+    外貌: APP
+    智力: INT
+    意志: POW
+    教育: EDU
+    幸运: LUC
+    理智: SAN
+    理智上限: SANMAX
+    生命值: HP
+    生命值上限: HPMAX
+    魔法值: MP
+    魔法值上限: MPMAX
+    灵感: IDEA
+    知识: KNOW
+    DB: DB
+    体格: BUILD
+    移动力: MOV
+    护甲: AR
+  skill_keys:
+    信用评级: 信用
+  field_keys:
+    职业: occupation
+    年龄: age
+  attributes:
+    STR: 50
+    CON: 50
+    SIZ: 50
+    DEX: 50
+    APP: 50
+    INT: 50
+    POW: 50
+    EDU: 50
+    LUC: 50
+  fields:
+    occupation: ""
+    age: 25
+  skills:
+    会计: 5
+    人类学: 1
+    估价: 5
+    考古学: 1
+    取悦: 15
+    攀爬: 20
+    计算机使用: 5
+    信用: 0
+    克苏鲁神话: 0
+    乔装: 5
+    汽车驾驶: 20
+    电气维修: 10
+    电子学: 1
+    话术: 5
+    急救: 30
+    历史: 5
+    恐吓: 15
+    跳跃: 20
+    法律: 5
+    图书馆: 20
+    聆听: 20
+    锁匠: 1
+    机械维修: 10
+    医学: 1
+    博物: 10
+    导航: 10
+    神秘学: 5
+    操作重型机械: 1
+    说服: 10
+    精神分析: 1
+    心理学: 10
+    骑乘: 5
+    妙手: 10
+    侦查: 25
+    潜行: 20
+    游泳: 20
+    投掷: 20
+    追踪: 10
+    驯兽: 5
+    潜水: 1
+    爆破: 1
+    读唇: 1
+    催眠: 1
+    炮术: 1
+    手枪: 20
+    步霰: 25
+    斗殴: 20
+  # Skill slots whose value derives from a canonical formula (seeded at
+  # creation, recomputed on read — never trusted from storage).
+  derived_skills:
+    闪避: 闪避
+    母语: 母语
+  # Attribute slots that are pure derivations (recomputed on read).
+  derived_attrs:
+    HPMAX: 生命值上限
+    MPMAX: 魔法值上限
+    SANMAX: 理智上限
+    IDEA: 灵感
+    KNOW: 知识
+  # Current pools: clamped to their max on edits; initialized at creation.
+  vitals:
+    HP: {max_key: HPMAX, start: full}
+    MP: {max_key: MPMAX, start: full}
+    SAN: {max_key: SANMAX, start: {expr: "min(意志, 理智上限)"}}
+  resources:
+    - {id: hp, label: HP, value: HP, max: HPMAX}
+    - {id: san, label: SAN, value: SAN, max: SANMAX}
+    - {id: mp, label: MP, value: MP, max: MPMAX}
